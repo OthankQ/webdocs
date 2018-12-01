@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Login </title>
+	<meta charset="UTF-8">
+ 	<meta name="description" content="Safely Buy, Sell, and Trade at Purdue">
+ 	<meta name="keywords" content="HTML,CSS,XML,JavaScript,buy,sell,trade,Purdue,CGT 141,CGT,Polytechnic,West Lafayette">
+ 	<meta name="author" content="Alexander Meredith, Charles Feng, Kelly Chen, Ryan Kim, Jiesong Kim">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- changes the viewport based on the screen resolution -->
+ 	<meta http-equiv="refresh" content="90">
+ 	<!-- Refreshes each page after 90 seconds -->
+	
+	<link rel="canonical" href="https://boilerloop.me/"/>
+	<!-- tells Google that this is the main domain of any subdomain of boilerloop -->
+ 	<link href="css/master.css" rel="stylesheet" type="text/css" />
+ 	<!-- loads the css page -->
+ 	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+ 	<!-- Loads the 'favicon.png' image for the page icon -->
+ 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+ 	<!-- Load a font family called 'Raleway' -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+</head>
+
+<body class="login-page">
+
+	<div class="hero-image">
+	
+	<div class="topnav" id="myTopnav">
+		<a href="index.html">Home</a>
+		<a class="active" href="login.html">Login</a>
+		<a href="signup.html">Sign Up</a>
+		<a href="lookingfor.html">Looking For</a>
+		<a href="forsale.html">For Sale</a>
+		<a href="trade.html">Trade</a>
+		<a href="createpost.html">Create Post</a>
+		<a href="javascript:void(0);" class="icon" 
+			onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a> <!-- ends javascript:void(0) -->
+		<!-- NOTE: Whichever page that this "topnav" is placed on, it has be changed to the class="active"
+
+			For Example: If you are putting this "topnav" code on the trade.html page, you need to delete class="active" for the index.html page and then place the class="active" on the trade.html page.
+
+		-->
+	</div> <!--topnav-->
+	
+<div class="login-box">
+	
+      	<div>
+			<h1> Login </h1>
+			<p> Purdue Email </p>
+			<input type="text" name="purdue email" placeholder="pete1869@purdue.edu"/> <br/>
+			<p> Password </p>
+			<input type="password" name="password" placeholder="Enter Password"/> <br/>
+			<input name="login button" type="submit" class="button" value="Login"/> <br/>
+			<a href="#"> Forgot your password? </a> <br/>
+			<a href="#"> Don't have an account? </a> <br/>
+		</div> <!-- ending the login box -->
+	</div> <!-- ends 'login-box' -->
+	
+	<script>
+		function myFunction() {
+    	var x = document.getElementById("myTopnav");
+   		if (x.className === "topnav") {
+    	    x.className += " responsive";
+    	} else {
+    	    x.className = "topnav";
+    	}
+	}
+	</script> <!-- ends script for hamburger bar -->
+
+	</div> <!-- ends 'hero-image' -->
+
+
+</body>
+
+</html>
